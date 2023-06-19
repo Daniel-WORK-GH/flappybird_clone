@@ -120,7 +120,7 @@ function updateLoop(){
 
     //update pipes
     if(gamestate == GAMESTATES.ONGOING){
-        for(let i = 0; i < 10; i++){
+        for(let i = 0; i < 100; i++){
             pipes[i].update(DELTATIME);
         }
     }
@@ -186,7 +186,9 @@ function drawLoop(){
     }
     
     //draw pipes
-    for(let i = 0; i < 10; i++){
+    let i = BIRD.score;
+    if (i > 0) i--;
+    for(; i < BIRD.score + 10 && i < 100; i++){
         pipes[i].draw(context);
     }
 

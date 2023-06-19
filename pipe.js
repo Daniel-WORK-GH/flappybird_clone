@@ -3,7 +3,7 @@ import { getScreenDim } from "./Screen.js";
 export { Pipe, PipeCreator }
 
 const STARTX = 1000;
-const SPEED = 30;
+const SPEED = 40;
 
 var groundstartper = 0.75;
 
