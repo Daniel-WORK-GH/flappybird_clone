@@ -1,0 +1,13 @@
+body{
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url(fonts/Minecraft.ttf);
+}
+
+html, body, div, canvas {
+    margin: 0;
+    padding: 0;
+}
